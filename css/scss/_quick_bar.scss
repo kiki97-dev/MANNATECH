@@ -1,0 +1,61 @@
+/* 퀵바 */
+#quick_bar {
+	position: absolute;
+	top: 0;
+	right: 0px;
+	width: 90px;
+	padding: 0px 0px 0;
+	z-index: 99;
+	transform: translateX(-100px);
+	background-color: #fff;
+
+	ul {
+		border-top: 1px solid #333;
+		border-bottom: 1px solid #333;
+		li {
+			border-bottom: 1px solid #eee;
+			&:last-child {
+				border-bottom: none;
+			}
+			a {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				padding: 12px 0px;
+				svg {
+					margin-bottom: 8px;
+				}
+				p {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
+
+#quick_bar .top,
+#quick_bar .bottom {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding: 8px 0px;
+	font-size: 12px;
+	border-bottom: 1px solid #333;
+	gap: 5px;
+}
+.quick_recent {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	border-bottom: 1px solid #333;
+}
+.quick_recent-none {
+	display: block;
+	padding: 10px;
+	border: 1px solid #ddd;
+	font-size: 13px;
+	text-align: center;
+	color: #aaa;
+}

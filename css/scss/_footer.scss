@@ -1,0 +1,147 @@
+.footer {
+	&__inner {
+		max-width: 1300px;
+		margin: 0px auto;
+		padding: 24px 10px 100px;
+	}
+	&__notice {
+		background-color: #fff;
+		border-top: 1px solid #ddd;
+		border-bottom: 1px solid #ddd;
+		&-inner {
+			padding: 20px 10px;
+			ul {
+				display: flex;
+				li {
+					display: flex;
+					align-items: center;
+					font-size: 16px;
+					color: #666666;
+					&::before {
+						content: "";
+						display: block;
+						width: 1px;
+						height: 12px;
+						background-color: #d5d5d5;
+						margin: 0px 14px;
+					}
+					&:first-child::before {
+						display: none;
+					}
+				}
+			}
+		}
+		&-more {
+			svg {
+				width: 12px;
+				fill: #333;
+			}
+		}
+	}
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 50px;
+	}
+	&__menu {
+		display: flex;
+		li {
+			display: flex;
+			align-items: center;
+			a {
+				font-size: 14px;
+				color: #666666;
+				strong {
+					font-weight: 700;
+				}
+			}
+			&::after {
+				content: "";
+				display: block;
+				width: 1px;
+				height: 12px;
+				background-color: #d5d5d5;
+				margin: 0px 14px;
+			}
+			&:last-child {
+				&::after {
+					display: none;
+				}
+			}
+		}
+	}
+	&__sns {
+		display: flex;
+		gap: 10px;
+		li {
+			&:first-child {
+				margin-right: 30px;
+			}
+		}
+	}
+	&__bottom {
+		display: flex;
+		gap: 60px;
+		color: #666666;
+		justify-content: space-between;
+
+		> div {
+			display: flex;
+			flex-direction: column;
+		}
+
+		h6 {
+			font-size: 18px;
+			font-weight: bold;
+			margin-bottom: 10px;
+			color: #333;
+		}
+		p {
+			font-size: 14px;
+			line-height: 1.5;
+			margin-bottom: 20px;
+			display: flex;
+			span {
+				font-weight: 500;
+				display: flex;
+				align-items: center;
+				margin-left: 4px;
+				color: #333;
+				&::after {
+					content: "";
+					display: block;
+					width: 1px;
+					height: 12px;
+					background-color: #d5d5d5;
+					margin: 0px 10px;
+				}
+			}
+		}
+		strong {
+			font-size: 14px;
+			font-weight: 700;
+		}
+		h5 {
+			font-weight: 700;
+			font-size: 32px;
+			color: #3182F6;
+			font-family: "Lato", sans-serif;
+			margin-bottom: 14px;
+		}
+		button {
+			max-width: 90px;
+			display: flex;
+			align-items: center;
+			border: 1px solid #555;
+			justify-content: center;
+			border-radius: 4px;
+			background-color: #fff;
+			gap: 8px;
+			padding: 2px 5px;
+			font-family: inherit;
+			svg {
+				transform: translateY(1px);
+			}
+		}
+	}
+}
