@@ -729,7 +729,7 @@ button {
   align-items: center;
   max-width: 1300px;
   margin: 0px auto;
-  background-image: url(/img/main03.png);
+  background-image: url(../img/main03.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
