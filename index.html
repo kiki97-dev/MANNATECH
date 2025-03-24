@@ -212,6 +212,25 @@
 					/>
 				</div>
 			</div>
+
+			<div class="main-banner__right">
+				<a href="">
+					<div class="main-banner__right-text">
+						<h5>
+							앰브로토스® <br />
+							글리칸
+						</h5>
+						<p>
+							매나테크의 대표 제품인 매나테크 앰브로토스 콤플렉스로  자연스러운 웰빙의
+							비밀을 밝혀보세요.
+						</p>
+						<span class="main-banner__text__more">
+							세포를 깨우는 글리칸 쇼핑하러 가기
+							<img src="./img/more_icon.svg" alt="" />
+						</span>
+					</div>
+				</a>
+			</div>
 		</section>
 
 		<section class="main01">
@@ -575,10 +594,8 @@
 								</div>
 								<div class="main-product__detail">
 									<div class="main-product__detail-wrap">
-										<h5>
-											트루퓨어</h5>
-										<p>간에 좋은 영양 성분, 간 건강 지킴이
-										</p>
+										<h5>트루퓨어</h5>
+										<p>간에 좋은 영양 성분, 간 건강 지킴이</p>
 										<h6>
 											<strong>46,900</strong>
 											원
@@ -649,8 +666,7 @@
 								</div>
 								<div class="main-product__detail">
 									<div class="main-product__detail-wrap">
-										<h5>
-											뉴트리베루스</h5>
+										<h5>뉴트리베루스</h5>
 										<p>간편한 파우더 타입의 멀티비타민과 미네랄</p>
 										<h6>
 											<strong>46,900</strong>
@@ -741,8 +757,7 @@
 								</div>
 								<div class="main-product__detail">
 									<div class="main-product__detail-wrap">
-										<h5>
-											혈당프로밸런스</h5>
+										<h5>혈당프로밸런스</h5>
 										<p>건강한 혈당 관리를 위한 매나테크 제품</p>
 										<h6>
 											<strong>46,900</strong>
@@ -778,10 +793,8 @@
 								</div>
 								<div class="main-product__detail">
 									<div class="main-product__detail-wrap">
-										<h5>
-											우먼스 프리미어 올인원</h5>
-										<p>성인 딸과 엄마가 함께 섭취하는 여성 건강 올인원 케어
-										</p>
+										<h5>우먼스 프리미어 올인원</h5>
+										<p>성인 딸과 엄마가 함께 섭취하는 여성 건강 올인원 케어</p>
 										<h6>
 											<strong>46,900</strong>
 											원
@@ -852,8 +865,7 @@
 								</div>
 								<div class="main-product__detail">
 									<div class="main-product__detail-wrap">
-										<h5>
-											뉴트리베루스</h5>
+										<h5>뉴트리베루스</h5>
 										<p>간편한 파우더 타입의 멀티비타민과 미네랄</p>
 										<h6>
 											<strong>46,900</strong>
@@ -1451,6 +1463,7 @@
 			let isAutoplayRunning = true;
 
 			let MainBannerswiper = new Swiper(".main-banner-slide__container", {
+				effect: "fade",
 				speed: 1000,
 				loop: true,
 				slidesPerView: "auto",
@@ -1510,32 +1523,6 @@
 					realIndexChange: function () {
 						if (this.updateProgressBar) this.updateProgressBar();
 					},
-					slideChangeTransitionStart: function () {
-						// 현재 슬라이드 인덱스
-						const currentIndex = this.activeIndex;
-						// 현재 슬라이드 요소
-						const currentSlide = this.slides[this.activeIndex];
-						// 현재 슬라이드의 width 값 가져오기
-						const slideWidth = currentSlide.offsetWidth;
-						// 이전 슬라이드 인덱스
-						const previousIndex = this.previousIndex;
-
-						// 현재 슬라이드를 width만큼 이동
-						this.wrapperEl.style.transform = `translate3d(-${
-							(slideWidth + 30) * this.activeIndex
-						}px, 0, 0)`;
-
-						// 다음 버튼 클릭 시
-						this.navigation.nextEl.addEventListener("click", () => {
-							const nextIndex = this.activeIndex + 1; // 다음 슬라이드 인덱스
-							this.slideTo(nextIndex, 0); // 다음 슬라이드로 이동 (0ms의 애니메이션)
-
-							// 현재 슬라이드를 width만큼 이동
-							this.wrapperEl.style.transform = `translate3d(-${
-								slideWidth + 30
-							}px, 0, 0)`;
-						});
-					},
 				},
 			});
 
@@ -1557,11 +1544,25 @@
 			}
 
 			let Main02swiper = new Swiper(".main02-slide__container", {
-				slidesPerView: 7.7,
-				spaceBetween: 40,
+				slidesPerView: 5,
+				spaceBetween: 30,
 				navigation: {
 					nextEl: ".main02-slide__next",
 					prevEl: ".main02-slide__prev",
+				},
+				breakpoints: {
+					640: {
+						slidesPerView: 5,
+						spaceBetween: 30,
+					},
+					768: {
+						slidesPerView: 5,
+						spaceBetween: 30,
+					},
+					1024: {
+						slidesPerView: 7.7,
+						spaceBetween: 40,
+					},
 				},
 			});
 
