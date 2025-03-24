@@ -1041,6 +1041,9 @@
 		height: auto;
 		width: calc(23% - 20px);
 		transition: width 0.3s, height 0.3s; /* all 대신 특정 속성만 지정 */
+		will-change: width, height; /* 브라우저에 변경 예정 속성 알림 */
+		transform: translateZ(0); /* GPU 가속 활성화 */
+
 		a {
 			display: block;
 			width: 100%;
@@ -1235,4 +1238,18 @@
 			background: #3cc492 !important;
 		}
 	}
+}
+
+/* tablet */
+@media screen and (max-width:1179px){
+    
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+/* c.p */
+@media screen and (max-width:539px){
+   
 }
