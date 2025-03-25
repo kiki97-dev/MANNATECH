@@ -1109,36 +1109,38 @@
 					<p>매나테크의 다양한 브랜드를 만나보세요</p>
 					<a href="">전체보기 &gt;</a>
 				</div>
-				<ul>
-					<li>
-						<a href="">
-							<div>
-								<img src="./img/main06_01.png" alt="" />
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<div>
-								<img src="./img/main06_02.png" alt="" />
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<div>
-								<img src="./img/main06_03.png" alt="" />
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<div>
-								<img src="./img/main06_04.png" alt="" />
-							</div>
-						</a>
-					</li>
-				</ul>
+				<div class="main06__list">
+					<ul>
+						<li>
+							<a href="">
+								<div class="main06__img-box">
+									<img src="./img/main06_01.png" alt="" />
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="main06__img-box">
+									<img src="./img/main06_02.png" alt="" />
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="main06__img-box">
+									<img src="./img/main06_03.png" alt="" />
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="main06__img-box">
+									<img src="./img/main06_04.png" alt="" />
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</section>
 
@@ -1157,32 +1159,37 @@
 					<p>건강을 챙기고자 하는 분들을 위해 준비했어요</p>
 					<a href="">전체보기 &gt;</a>
 				</div>
-				<ul>
-					<li>
-						<a href="">
-							<div class="main08__img-box">
-								<img src="./img/main08_01.png" alt="" />
-							</div>
-							<div class="main08__text">
-								<span>진행중</span>
-								<strong>트루헬스 마스터 이벤트 🍀</strong>
-								<p>2025.02.10 ~ 2025.02.28</p>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<div class="main08__img-box">
-								<img src="./img/main08_02.png" alt="" />
-							</div>
-							<div class="main08__text">
-								<span>진행중</span>
-								<strong>트루헬스 마스터 이벤트 🍀</strong>
-								<p>2025.02.10 ~ 2025.02.28</p>
-							</div>
-						</a>
-					</li>
-				</ul>
+				<div class="main08__list">
+					<ul>
+						<li>
+							<a href="">
+								<div class="main08__img-box">
+									<img src="./img/main08_01.png" alt="" />
+								</div>
+								<div class="main08__text">
+									<span>진행중</span>
+									<strong>트루헬스 마스터 이벤트 🍀</strong>
+									<p>2025.02.10 ~ 2025.02.28</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="main08__img-box">
+									<img src="./img/main08_02.png" alt="" />
+								</div>
+								<div class="main08__text">
+									<span>진행중</span>
+									<strong>트루헬스 마스터 이벤트 🍀</strong>
+									<p>2025.02.10 ~ 2025.02.28</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<a href="" class="mo-more-btn">
+					전체보기 &gt;
+				</a>
 			</div>
 		</section>
 
@@ -1274,6 +1281,10 @@
 						</div>
 					</div>
 				</div>
+
+				<a href="" class="mo-more-btn">
+					전체보기 &gt;
+				</a>
 			</div>
 		</section>
 
@@ -1597,7 +1608,7 @@
 			//리더들의공간 슬라이드
 			let main09swiper = new Swiper(".main09-slide__container", {
 				slidesPerView: "auto",
-				spaceBetween: 20,
+				spaceBetween: 5,
 				speed: 300, // CSS transition과 동일한 시간 설정
 				navigation: {
 					nextEl: ".main09-slide__next",
@@ -1606,6 +1617,11 @@
 				on: {
 					resize: function () {
 						this.update(); // Swiper 리사이즈 반영
+					},
+				},
+				breakpoints: {
+					768: {
+						spaceBetween: 20,
 					},
 				},
 			});
@@ -1617,7 +1633,7 @@
 					delay: 3000, // 3초마다 자동 전환
 					disableOnInteraction: false, // 유저가 터치해도 자동 재생 유지
 				},
-				slidesPerView: 5,
+				slidesPerView: 3.2,
 				spaceBetween: 5,
 				speed: 300, // CSS transition과 동일한 시간 설정
 				navigation: {
@@ -1627,6 +1643,11 @@
 				pagination: {
 					el: ".main10-slide__pagination",
 					type: "progressbar",
+				},
+				breakpoints: {
+					768: {
+						slidesPerView: 5,
+					},
 				},
 			});
 
