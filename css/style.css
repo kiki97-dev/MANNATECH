@@ -201,6 +201,13 @@ button {
   padding: 0px 10px;
   color: #333;
 }
+.main-banner__text.mo {
+  display: none;
+}
+.main-banner__text h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
 .main-banner__text h5 {
   font-size: 36px;
   margin-bottom: 30px;
@@ -1016,12 +1023,17 @@ button {
   font-size: 20px;
 }
 .main06__title a {
+  display: flex;
+  align-items: center;
   position: absolute;
   bottom: 0;
   right: 10px;
-  color: #333;
   color: #656565;
   font-size: 16px;
+}
+.main06__title a > img {
+  width: 16px;
+  margin-left: 5px;
 }
 
 .main07 {
@@ -1081,12 +1093,18 @@ button {
   font-size: 20px;
 }
 .main08__title a {
+  display: flex;
+  align-items: center;
   position: absolute;
   bottom: 0;
   right: 10px;
   color: #333;
   color: #656565;
   font-size: 16px;
+}
+.main08__title a > img {
+  width: 16px;
+  margin-left: 5px;
 }
 .main08__text {
   position: relative;
@@ -1261,12 +1279,18 @@ button {
   color: #555;
 }
 .main10__title a {
+  display: flex;
+  align-items: center;
   position: absolute;
   bottom: 0;
   right: 10px;
   color: #333;
   color: #656565;
   font-size: 16px;
+}
+.main10__title a > img {
+  width: 16px;
+  margin-left: 5px;
 }
 .main10-slide {
   position: relative;
@@ -1384,6 +1408,11 @@ button {
   text-align: center;
   margin-top: 30px;
   color: #555;
+  align-items: center;
+}
+.mo-more-btn > img {
+  width: 12px;
+  margin-left: 5px;
 }
 
 /* tablet */
@@ -2247,6 +2276,12 @@ button {
   .main-banner__text {
     padding: 0px 0px;
   }
+  .main-banner__text.pc {
+    display: none;
+  }
+  .main-banner__text.mo {
+    display: block;
+  }
   .main-banner__text h5 {
     font-size: 24px;
     margin-bottom: 20px;
@@ -2323,6 +2358,33 @@ button {
   }
   .main-banner-slide__pagination {
     display: none;
+  }
+  .main-banner__slide1 {
+    background-image: url("../img/main-banner_m_01.png");
+  }
+  .main-banner__slide2 {
+    background-image: url("../img/main-banner_m_02.png");
+  }
+  .main-banner__slide3 {
+    background-image: url("../img/main-banner_m_03.png");
+  }
+  .main-banner__slide4 {
+    background-image: url("../img/main-banner_m_04.png");
+  }
+  .main-banner__slide5 {
+    background-image: url("../img/main-banner_m_05.png");
+  }
+  .main-banner__slide6 {
+    background-image: url("../img/main-banner_m_06.png");
+  }
+  .main-banner__slide7 {
+    background-image: url("../img/main-banner_m_07.png");
+  }
+  .main-banner__slide8 {
+    background-image: url("../img/main-banner_m_08.png");
+  }
+  .main-banner__slide9 {
+    background-image: url("../img/main-banner_m_09.png");
   }
   .main01 {
     padding: 30px 10px;
@@ -2812,6 +2874,26 @@ button {
   }
   .mo-more-btn {
     display: flex;
+  }
+  /* 메인 배너 화살표 */
+  .long-arrow::before {
+    top: 9px;
+    left: 40px;
+    width: 10px;
+    height: 1px;
+    background-color: #333;
+    transform: rotate(40deg);
+    transform-origin: right center;
+  }
+  .long-arrow::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 1px;
+    background-color: #333;
+    position: absolute;
+    top: 9px;
+    left: 0px;
   }
 }
 /* 퀵바 */

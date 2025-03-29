@@ -52,6 +52,13 @@
 		width: 70%;
 		padding: 0px 10px;
 		color: #333;
+		&.mo {
+			display: none;
+		}
+		h4 {
+			font-size: 16px;
+			margin-bottom: 10px;
+		}
 		h5 {
 			font-size: 36px;
 			margin-bottom: 30px;
@@ -880,12 +887,17 @@
 			font-size: 20px;
 		}
 		a {
+			display: flex;
+			align-items: center;
 			position: absolute;
 			bottom: 0;
 			right: 10px;
-			color: #333;
 			color: #656565;
 			font-size: 16px;
+			> img {
+				width: 16px;
+				margin-left: 5px;
+			}
 		}
 	}
 }
@@ -947,12 +959,18 @@
 			font-size: 20px;
 		}
 		a {
+			display: flex;
+			align-items: center;
 			position: absolute;
 			bottom: 0;
 			right: 10px;
 			color: #333;
 			color: #656565;
 			font-size: 16px;
+			> img {
+				width: 16px;
+				margin-left: 5px;
+			}
 		}
 	}
 	&__text {
@@ -1130,12 +1148,18 @@
 			color: #555;
 		}
 		a {
+			display: flex;
+			align-items: center;
 			position: absolute;
 			bottom: 0;
 			right: 10px;
 			color: #333;
 			color: #656565;
 			font-size: 16px;
+			> img {
+				width: 16px;
+				margin-left: 5px;
+			}
 		}
 	}
 	&-slide {
@@ -1264,6 +1288,11 @@
 	text-align: center;
 	margin-top: 30px;
 	color: #555;
+	align-items: center;
+	> img {
+		width: 12px;
+		margin-left: 5px;
+	}
 }
 
 /* tablet */
@@ -2200,6 +2229,12 @@
 
 		&__text {
 			padding: 0px 0px;
+			&.pc {
+				display: none;
+			}
+			&.mo {
+				display: block;
+			}
 			h5 {
 				font-size: 24px;
 				margin-bottom: 20px;
@@ -2284,6 +2319,11 @@
 		}
 		&-slide__pagination {
 			display: none;
+		}
+		@for $i from 1 through 9 {
+			&__slide#{$i} {
+				background-image: url("../img/main-banner_m_0#{$i}.png");
+			}
 		}
 	}
 
@@ -2806,5 +2846,27 @@
 	}
 	.mo-more-btn {
 		display: flex;
+	}
+	/* 메인 배너 화살표 */
+	.long-arrow {
+		&::before {
+			top: 9px;
+			left: 40px;
+			width: 10px;
+			height: 1px;
+			background-color: #333;
+			transform: rotate(40deg);
+			transform-origin: right center;
+		}
+		&::after {
+			content: "";
+			display: block;
+			width: 50px;
+			height: 1px;
+			background-color: #333;
+			position: absolute;
+			top: 9px;
+			left: 0px;
+		}
 	}
 }
