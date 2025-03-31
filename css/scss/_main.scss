@@ -1295,6 +1295,10 @@
 	}
 }
 
+.mo {
+	display: none!important;
+}
+
 /* tablet */
 @media screen and (max-width: 1179px) {
 	.main-banner {
@@ -2202,6 +2206,9 @@
 
 /* c.p */
 @media screen and (max-width: 539px) {
+	.mo {
+		display: block!important;
+	}
 	.main-banner {
 		padding: 0px 10px;
 		&-slide__container {
@@ -2323,6 +2330,7 @@
 		@for $i from 1 through 9 {
 			&__slide#{$i} {
 				background-image: url("../img/main-banner_m_0#{$i}.png");
+				background-position: center;
 			}
 		}
 	}

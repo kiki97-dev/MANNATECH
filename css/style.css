@@ -1415,6 +1415,10 @@ button {
   margin-left: 5px;
 }
 
+.mo {
+  display: none !important;
+}
+
 /* tablet */
 @media screen and (max-width: 1179px) {
   .main-banner {
@@ -2252,6 +2256,9 @@ button {
 }
 /* c.p */
 @media screen and (max-width: 539px) {
+  .mo {
+    display: block !important;
+  }
   .main-banner {
     padding: 0px 10px;
   }
@@ -2361,30 +2368,39 @@ button {
   }
   .main-banner__slide1 {
     background-image: url("../img/main-banner_m_01.png");
+    background-position: center;
   }
   .main-banner__slide2 {
     background-image: url("../img/main-banner_m_02.png");
+    background-position: center;
   }
   .main-banner__slide3 {
     background-image: url("../img/main-banner_m_03.png");
+    background-position: center;
   }
   .main-banner__slide4 {
     background-image: url("../img/main-banner_m_04.png");
+    background-position: center;
   }
   .main-banner__slide5 {
     background-image: url("../img/main-banner_m_05.png");
+    background-position: center;
   }
   .main-banner__slide6 {
     background-image: url("../img/main-banner_m_06.png");
+    background-position: center;
   }
   .main-banner__slide7 {
     background-image: url("../img/main-banner_m_07.png");
+    background-position: center;
   }
   .main-banner__slide8 {
     background-image: url("../img/main-banner_m_08.png");
+    background-position: center;
   }
   .main-banner__slide9 {
     background-image: url("../img/main-banner_m_09.png");
+    background-position: center;
   }
   .main01 {
     padding: 30px 10px;
