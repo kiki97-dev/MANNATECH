@@ -83,6 +83,7 @@
 			padding: 5px 10px 5px 20px;
 			justify-self: start;
 			margin-top: 30px;
+			flex: 0 1 auto;
 		}
 	}
 
@@ -1296,7 +1297,7 @@
 }
 
 .mo {
-	display: none!important;
+	display: none !important;
 }
 
 /* tablet */
@@ -2207,7 +2208,7 @@
 /* c.p */
 @media screen and (max-width: 539px) {
 	.mo {
-		display: block!important;
+		display: block !important;
 	}
 	.main-banner {
 		padding: 0px 10px;
@@ -2255,8 +2256,7 @@
 				padding: 5px 10px 5px 20px;
 				margin-top: 30px;
 				font-size: 12px;
-				justify-content: start;
-				width: auto;
+
 				img {
 					width: 30px;
 				}

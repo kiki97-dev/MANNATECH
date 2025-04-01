@@ -232,6 +232,7 @@ button {
   padding: 5px 10px 5px 20px;
   justify-self: start;
   margin-top: 30px;
+  flex: 0 1 auto;
 }
 .main-banner-nav {
   position: absolute;
@@ -2302,8 +2303,6 @@ button {
     padding: 5px 10px 5px 20px;
     margin-top: 30px;
     font-size: 12px;
-    justify-content: start;
-    width: auto;
   }
   .main-banner__text__more img {
     width: 30px;
