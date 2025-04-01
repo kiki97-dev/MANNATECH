@@ -2302,6 +2302,8 @@ button {
     padding: 5px 10px 5px 20px;
     margin-top: 30px;
     font-size: 12px;
+    justify-content: start;
+    width: auto;
   }
   .main-banner__text__more img {
     width: 30px;
