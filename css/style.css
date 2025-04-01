@@ -200,6 +200,9 @@ button {
   width: 70%;
   padding: 0px 10px;
   color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 .main-banner__text.mo {
   display: none;
@@ -230,9 +233,7 @@ button {
   background-color: #fff;
   border-radius: 30px;
   padding: 5px 10px 5px 20px;
-  justify-self: start;
   margin-top: 30px;
-  flex: 0 1 auto;
 }
 .main-banner-nav {
   position: absolute;
